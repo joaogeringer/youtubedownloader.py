@@ -9,6 +9,7 @@ def download_video(url, save_path):
         highest_res_stream = streams.get_highest_resolution()
         highest_res_stream.download(output_path=save_path)
         print('Video downloaded successfully!')
+        
     except Exception as e:
         print(e)
 
